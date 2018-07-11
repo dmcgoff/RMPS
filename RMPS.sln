@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMPS.Business.Interface", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMPS.Service.UnitTest", "RMPS.Service.UnitTest\RMPS.Service.UnitTest.csproj", "{3838B829-DECA-4AC1-9CDD-96EAC3D332F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RMPS.CompositionRoot", "RMPS.CompositionRoot\RMPS.CompositionRoot.csproj", "{DD1B81CD-0C51-4560-A49A-884C8FD29AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMPS.CompositionRoot", "RMPS.CompositionRoot\RMPS.CompositionRoot.csproj", "{DD1B81CD-0C51-4560-A49A-884C8FD29AFD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RMPS.Services.Api", "RMPS.Services.Api\RMPS.Services.Api.csproj", "{9542C806-5841-41E7-A396-A300DCC3E9EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{DD1B81CD-0C51-4560-A49A-884C8FD29AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD1B81CD-0C51-4560-A49A-884C8FD29AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD1B81CD-0C51-4560-A49A-884C8FD29AFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9542C806-5841-41E7-A396-A300DCC3E9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9542C806-5841-41E7-A396-A300DCC3E9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9542C806-5841-41E7-A396-A300DCC3E9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9542C806-5841-41E7-A396-A300DCC3E9EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{F7521A5C-47D4-45FC-9E0B-03A02E4ECF15} = {9E9D62F8-EED5-4C46-B1EF-710BAA4E59CE}
 		{3838B829-DECA-4AC1-9CDD-96EAC3D332F6} = {E8E320E0-E12A-485C-AC4F-3BCED5DBB91A}
 		{DD1B81CD-0C51-4560-A49A-884C8FD29AFD} = {5AF6E539-F8A7-4BF5-9B3F-7D5CB4605E91}
+		{9542C806-5841-41E7-A396-A300DCC3E9EB} = {5AF6E539-F8A7-4BF5-9B3F-7D5CB4605E91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F25407DC-6ECF-46A9-8B02-D4DC0FF1C8EC}

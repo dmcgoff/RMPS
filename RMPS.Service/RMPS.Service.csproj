@@ -366,7 +366,6 @@
   <ItemGroup>
     <ProjectReference Include="..\RMPS.Business.Interface\RMPS.Business.Interface.csproj" />
     <ProjectReference Include="..\RMPS.CompositionRoot\RMPS.CompositionRoot.csproj" />
-    <ProjectReference Include="..\RMPS.DataAccess.Entities\RMPS.DataAccess.Entities.csproj" />
   </ItemGroup>
 
 </Project>

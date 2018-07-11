@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var operators_1 = require("rxjs/operators");
 //import { CourseService } from '../../services/course.service';
 //import { Component, OnInit } from '@angular/core';
 //import { SelectionEvent, GridDataResult, PageChangeEvent, DataStateChangeEvent } from '@progress/kendo-angular-grid';
@@ -20,21 +21,23 @@ var CoursesComponent = /** @class */ (function () {
         this.courseService = courseService;
         this.state = {
             skip: 0,
-            take: 5
+            take: 20
         };
+        this.isLoading = false;
     }
     CoursesComponent.prototype.ngOnInit = function () {
         this.loadGridData();
     };
     CoursesComponent.prototype.loadGridData = function () {
         var _this = this;
-        this.courseService.fetch(this.state).subscribe(function (r) { return _this.products = r; });
+        this.isLoading = true;
+        this.courseService.fetch(this.state)
+            .pipe(operators_1.finalize(function () { return _this.isLoading = false; }))
+            .subscribe(function (r) { return _this.products = r; });
     };
     CoursesComponent.prototype.dataStateChange = function (state) {
-        var _this = this;
         this.state = state;
-        this.courseService.fetch(state)
-            .subscribe(function (r) { return _this.products = r; });
+        this.loadGridData();
     };
     CoursesComponent = __decorate([
         core_1.Component({

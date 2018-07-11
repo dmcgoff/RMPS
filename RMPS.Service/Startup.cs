@@ -43,7 +43,7 @@ namespace WebApplication1
             {
                 cfg.MapRoute("Default",
                     "{controller}/{action}/{id?}",
-                    new { controller = "App", Action = "Index" });
+                    new { controller = "Home", Action = "Index" });
             });
 
             //app.Run(async (context) =>

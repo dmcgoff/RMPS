@@ -22,8 +22,8 @@ namespace RMPS.Service.UnitTest
                 PageSize = 10
             };
 
-            var dsres = sut.Post(dsreq);
-            var result = dsres.Data.Any();
+            var dsres = sut.Get(dsreq);
+            var result = ((DataSourceResult)dsres.Value).Data.Any();
 
             Assert.True(result);
         }
