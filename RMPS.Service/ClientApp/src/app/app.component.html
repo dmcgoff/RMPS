@@ -1,0 +1,23 @@
+<div class="main-wrapper">
+    <aside class="nav-section">
+        <h1>{{title}}</h1>
+        <h3 style="color: red" *ngIf="!isWebApiUp">The Web API is not running.</h3>
+        <ul>
+            <li>
+                <a routerLink="/regional-sales-status" routerLinkActive="active-link">Regional Sales Status</a>
+            </li>
+            <li>
+                <a routerLink="/course-catalog" routerLinkActive="active-link">Course Catalog</a>
+            </li>
+            <!-- <li>
+                <a routerLink="/team-efficiency"><span class="icon icon-faves"></span>Team Efficiency</a>
+            </li> -->
+        </ul>
+        <div class="rights">
+            &copy; New Venture Software
+        </div>
+    </aside>
+    <section class="main-section">
+        <router-outlet></router-outlet>
+    </section>
+</div>

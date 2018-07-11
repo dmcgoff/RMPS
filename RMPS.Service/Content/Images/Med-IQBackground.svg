@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="792px" height="612px" viewBox="0 0 792 612" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Med-IQBackground</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Med-IQBackground" fill-rule="nonzero">
+            <polygon id="Shape" fill="#F1F1F1" points="287.03 0 0 0 0 612 424.49 612 692.79 368.45"></polygon>
+            <polygon id="Shape" fill="#F6F6F6" points="792 278.4 792 0 287.03 0 692.79 368.45"></polygon>
+            <path d="M692.79,368.45 L792,278.4 L792,284.42 L792,612 L424.49,612 L692.79,368.45 Z" id="Combined-Shape" fill="#ECECEC"></path>
+        </g>
+    </g>
+</svg>

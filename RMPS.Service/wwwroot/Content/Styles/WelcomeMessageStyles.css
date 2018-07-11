@@ -1,0 +1,17 @@
+﻿body {
+}
+.welcome-header {
+    font-size: 40px;
+    line-height: 50px;
+    color: #262A82;
+    font-family: 'Proxima-Nova', sans-serif;
+    font-weight: 300;
+}
+
+.welcome-text {
+    font-size: 15px;
+    line-height: 23px;
+    color: #222222;
+    font-family: 'Proxima-Nova', sans-serif;
+    font-weight: 400;
+}

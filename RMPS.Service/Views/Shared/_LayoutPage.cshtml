@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Automated Risk Knowledge System managed by Med-IQ." />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/content/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/content/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/content/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/content/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/content/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/content/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/content/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/content/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/content/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/content/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/content/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/content/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/content/images/favicon-16x16.png">
+    <link rel="manifest" href="/content/images/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/content/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#002983">
+
+    <link rel="mask-icon" href="/content/images/safari-pinned-tab.svg" color="#002983">
+    <meta name="msapplication-config" content="/content/images/browserconfig.xml">
+
+    <title>@ViewBag.Title</title>
+
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="/content/site.lib.min.css?cb=201710102224" rel="stylesheet" type="text/css" />
+    <link href="/content/site.min.css?cb=201710102224" rel="stylesheet" type="text/css" />
+    <link href="/content/Styles/ARKS/arks-2018.css?cb=201802131011" rel="stylesheet" type="text/css" />
+
+    <style>
+        .panel-primary {
+            box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .2);
+            border-radius: 1px;
+            background-color: #fff;
+        }
+
+            .panel-primary .panel-heading {
+                border-bottom: 1px solid #eee;
+                margin: 12px 0;
+                padding: 16px 0;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+        .textarea-counter {
+            text-align: right;
+            margin: 4px 8px 0 0;
+            font-size: 12px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        body {
+            background: url(/Content/Images/Med-IQBackground.svg) center center no-repeat !important;
+            background-size: cover !important;
+        }
+
+        p.instructional {
+            font-size: 14.5px;
+            color: #5a5a5a;
+            font-weight: 300;
+        }
+
+        p.instructional-small {
+            font-size: 12px;
+            color: #5a5a5a;
+            font-weight: 400;
+        }
+
+        .page-header {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        /* compatibility only */
+        header {
+            display: block !important;
+            background: #fff !important;
+        }
+
+        .header-right {
+            border: none !important;
+        }
+
+        .footer {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .footer-bottom {
+            padding-top: 24px;
+            height: 67px;
+        }
+
+
+
+        header .profile {
+            position: relative;
+            width: calc(100% - 120px);
+            text-align: right;
+            /*padding: 10px 20px 0 0;*/
+            height: 38px;
+            float: left;
+            border-bottom: 1px solid #ebebeb;
+        }
+
+        .profile p {
+            display: inline;
+        }
+
+        .logo {
+            display: inline-block;
+            position: relative;
+            top: -38px;
+            left: 6%;
+            background: #fff;
+        }
+
+        @@media screen and (max-width: 991px) {
+            .logo {
+                display: inline-block;
+                margin: 12px auto;
+                width: 100%;
+                position: initial;
+                border: none;
+                text-align: center;
+            }
+
+                .logo a {
+                    display: inline-block;
+                }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <div class="profile noPrint">
+                <p id="temporal-salutation">
+                    Good morning,
+                </p>
+            </div>
+
+            <div id="trigger-overlay" class="noPrint">
+                <a href="#">
+                    <div class="off-canvas-nav">
+                        Menu <span class="icon-menu7"></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="logo noPrint">
+                <a class="header-brand" href="https://www.med-iq.com/">
+                    <span class="header-brand-logo"></span>
+                </a>
+            </div>
+
+            @if (ViewBag.PageTitle != null)
+            {
+                <div class="container">
+                    <div class="page-header">
+                        <h1>@ViewBag.PageTitle</h1>
+                    </div>
+                </div>
+            }
+        </header>
+        <div class="off-canvas-overlay overlay-scale">
+            <button type="button" class="overlay-close">Close <span class="icon-cross2"></span></button>
+            <nav>
+                <ul id="menu" class="nav navbar-nav">
+                    <li>
+
+                        <a href="/Participants/Participants" title="Curriculum">Curriculum</a>
+                    </li>
+                    <li>
+
+                        <a href="/Support/Tickets" title="Support">Support</a>
+                    </li>
+                    <li class="active">
+
+                        <a href="/Administration" title="Admin">Admin</a>
+                    </li>
+                    <li>
+
+                        <a href="/Options" title="My Account">My Account</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        @RenderBody()
+
+        <footer class="footer footer-default noPrint">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            © 2018 Med-IQ®&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://med-iq.com">Med-IQ Website</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="">@Html.ActionLink("Contact & Support", "Index", "Contact", new { Area = "Help" }, null)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="decorative-line"></div>
+    </div>
+    <script src="/scripts/site.lib.min.js"></script>
+    <script src="~/Scripts/site.js"></script>
+    <script src="~/Scripts/off-canvas-menu.js"></script>
+
+    @RenderSection("Scripts")
+</body>
+</html>

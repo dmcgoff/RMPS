@@ -1,0 +1,103 @@
+﻿/* MRM Color Palette*/
+/* Bootstrap "Angle Theme" Color Palette*/
+.arks-header {
+  background: white;
+}
+.arks-header-login {
+  padding: 0;
+  margin: 5px 0 5px 0;
+  display: block;
+}
+.arks-header-logo {
+  padding: 0;
+  margin: 10px 0 10px 0;
+  display: block;
+  height: 50px;
+}
+.arks-header-navbar > li > a {
+  padding: 0;
+  padding-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0;
+}
+.arks-header .arks-header-navbar > li > a {
+  color: #a0a0a0;
+}
+.arks-header .arks-header-navbar > .active > a {
+  background-color: transparent;
+  border-bottom: 2px;
+  border-color: #D0D0D0;
+  border-bottom-style: solid;
+  color: black;
+}
+.arks-title {
+  display: inline-block;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: #D0D0D0;
+  color: #D0D0D0;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 40px;
+}
+.arks-title sup {
+  font-size: 8px;
+}
+.arks-environment {
+  color: maroon;
+  background-color: lightskyblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.arks-browserwarning {
+  color: black;
+  background-color: yellow;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.arks-environment-dev {
+  color: maroon;
+  background-color: lightskyblue;
+}
+.arks-environment-test {
+  color: maroon;
+  background-color: gold;
+}
+.arks-environment-stage {
+  color: maroon;
+  background-color: lightpink;
+}
+.arks-environment-demo {
+  color: maroon;
+  background-color: #99FFCC;
+}
+#print_title {
+  display: none;
+  background: #b2d281;
+  padding: 8px 0 8px 0;
+  width: 100%;
+  text-align: center;
+  font: normal normal 14px Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #464E42;
+  margin: auto;
+}
+.arks-title-bar {
+  color: white;
+  background-color: #002983;
+}
+.arks-title-bar-text {
+  padding: 12px 15px;
+  line-height: 20px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=arks-header.css.map */

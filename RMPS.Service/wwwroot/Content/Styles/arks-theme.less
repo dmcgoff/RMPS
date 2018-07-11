@@ -1,0 +1,206 @@
+﻿@import "arks-variables"; 
+
+body {
+    height: 100%;
+    font-family: Raleway, sans-serif;
+    background-color: #EEEEEE;
+}
+
+.h1 {
+    font-size: 28px;
+}
+
+.list-group-item {
+    //border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+}
+
+.list-group-item:first-child {
+    border-radius: 0;
+    border-top: 0;
+}
+
+.list-group-item:last-child {
+    border-radius: 0;
+    border-bottom: 0;
+}
+
+.form-group-readonly {
+    margin-bottom: 0;
+}
+
+.panel {
+    border: none;
+    border-radius: 0;
+}
+
+.panel-footer {
+    background-color: transparent;
+    border-top: 0;
+    text-align: center;
+}
+.panel-subtitle {
+    margin-top: 10px;
+    margin-bottom: -5px;
+    padding: 2px;
+    text-align: center;
+    font-size: 18px;
+}
+.btn {
+    border-radius: 0;
+    border-color: transparent;
+    background-color: #005FC5;
+    color: white;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.btn-xs {
+    text-align: left;
+}
+.btn-default[disabled] {
+    background-color: @ColorAccentGrey;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #005FC5;
+}
+.form-control:hover {
+    border-color: #005FC5;
+}
+.nav-pills > li > a {
+    margin: 4px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.form-control-static {
+    border: 0;
+}
+
+.table > tbody > tr > th {
+    border-top-width: 0;
+}
+
+.printOnly  { 
+    display: none;  
+}
+
+.bg-primary-light {
+    background-color: @ColorPrimaryLight;
+}
+.bg-primary-dark {
+    background-color: @ColorPrimaryDark;
+}
+
+.bg-success-light {
+    background-color: @ColorSuccessLight;
+}
+.bg-success-dark {
+    background-color: @ColorSuccessDark;
+}
+
+.bg-info-light {
+    background-color: @ColorInfoLight;
+}
+.bg-info-dark {
+    background-color: @ColorInfoDark;
+}
+
+.bg-warning-light {
+    background-color: @ColorWarningLight;
+}
+.bg-warning-dark {
+    background-color: @ColorWarningDark;
+}
+
+.bg-danger-light {
+    background-color: @ColorDangerLight;
+}
+.bg-danger-dark {
+    background-color: @ColorDangerDark;
+}
+
+
+.text-justify-xs {
+    text-align: justify;
+}
+.text-center-xs {
+    text-align: center;
+}
+.text-left-xs {
+    text-align: left;
+}
+.text-right-xs {
+    text-align: right;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-justify-sm {
+        text-align: justify;
+    }
+    .text-left-sm {
+        text-align: left;
+    }
+    .text-right-sm {
+        text-align: right;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .text-justify-md {
+        text-align: justify;
+    }
+    .text-left-md {
+        text-align: left;
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-center-md {
+        text-align: center;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-justify-lg {
+        text-align: justify;
+    }
+    .text-left-lg {
+        text-align: left;
+    }
+    .text-right-lg {
+        text-align: right;
+    }
+    .text-center-lg {
+        text-align: center;
+    }
+}
+
+.placeholder {
+    color: #aaa !important;
+}
+
+@media (min-width: 768px) {
+    .scrollable-y {
+        max-height: 340px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}

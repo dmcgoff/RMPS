@@ -1,0 +1,112 @@
+  <style>
+      .required-form-field label {
+          font-weight: bold;
+      }
+
+      .required-form-field label:after {
+          color: #e32;
+          content: ' *';
+          display: inline;
+      }
+
+      textarea.k-invalid {
+          border-color: #D0021B;
+      }
+      span.k-dropdown-wrap.k-invalid {
+          border-color: red !important;
+      }
+
+      #ModalityDescriptorIdRow span.k-dropdown {
+          width: 100%;
+          padding-right: 0 !important;
+      }
+
+      #ModalityTypeIdRow span.k-dropdown {
+          width: 100%;
+          padding-right: 0 !important;
+      }
+
+      #ModalityStatusIdRow span.k-dropdown {
+          width: 100%;
+          padding-right: 0 !important;
+      }
+  </style>
+  <form>
+      <input id="Id" type="hidden" value="@Model.Id" />
+      <input id="CourseNumber" name="CourseNumber" type="hidden" value="@Model.CourseNumber" />
+
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+              <div class="panel panel-primary">
+
+
+                  <div class="panel-heading">Edit Course</div>
+
+                  <div class="panel-body">
+
+                      <div class="form-group">
+                          <label for="Number" class="control-label-upper control-label">Course Number</label>
+                          <p class="well">@Model.CourseNumber</p>
+                          <span data-for='Number' class='k-invalid-msg'></span>
+                      </div>
+
+                      <div class="form-group required-form-field">
+                          <label for="Name" class="control-label">Name</label>
+                          <input class="form-control" id="Name" name="Name" placeholder="" type="text" value="@Model.Name"
+                                 data-val-required="Please Enter a Name." />
+                          <span data-for='Name' class='k-invalid-msg'></span>
+                      </div>
+
+                      <div class="form-group required-form-field">
+                          <label for="ModalityTypeId" class="control-label">Course Type</label>
+                          <input class="form-control" id="ModalityTypeId" name="ModalityTypeId" value="@Model.ModalityTypeId"
+                                 data-val-required="Please select a Course Type." />
+                          <span data-for='ModalityTypeId' class='k-invalid-msg'></span>
+                      </div>
+
+                      <div class="form-group required-form-field">
+                          <label for="ModalityDescriptorId" class="control-label">Product Type</label>
+                          <input class="form-control" id="ModalityDescriptorId" name="ModalityDescriptorId" value="@Model.ModalityDescriptorId"
+                                 data-val-required="Please select a Course Type." />
+                          <span data-for='ModalityDescriptorId' class='k-invalid-msg'></span>
+                      </div>
+
+
+                      <div class="form-group required-form-field">
+                          <label for="ModalityStatusId" class="control-label">Status</label>
+                          <input class="form-control" id="ModalityStatusId" name="ModalityStatusId" value="@Model.ModalityStatusId"
+                                 data-val-required="Please select a Course Status." />
+                          <span data-for='ModalityStatusId' class='k-invalid-msg'></span>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="Description" class="control-label">Description</label>
+                          <textarea id="Description" name="Description" rows="5" class="form-control"
+                                    data-val-richTextRequired="Instructions is required." placeholder="Enter a description..."
+                                    data-val-required="Please enter a Description.">@Model.Description</textarea>
+                          <span data-for='Description' class='k-invalid-msg'></span>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="Notes" class="control-label">Notes</label>
+                          <textarea rows="4" class="form-control" id="Notes" name="Notes" placeholder="Enter notes...">@Model.Notes</textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+              <button class="btn btn-primary btn-block btn-action">Save Changes<i class="icon-arrow-right8"></i></button>
+          </div>
+      </div>
+      <br />
+      <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+              <a href="">Cancel</a>
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a>Reset to default settings</a>
+          </div>
+      </div>
+  </form>
