@@ -1,33 +1,33 @@
-<div class='main-nav'>
-    <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' [routerLink]="['/home']">RMPS.Services.Api</a>
-        </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse'>
-            <ul class='nav navbar-nav'>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <a class="navbar-brand">{{pageTitle}}</a>
+        <ul class="nav navbar-nav">
+            <li routerLinkActive="active">
+                <a [routerLink]="['/welcome']">Home</a>
+            </li>
+            <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a [routerLink]="['/products']">Product List</a>
+            </li>
+            <li routerLinkActive="active">
+                <a [routerLink]="['/products', 0, 'edit']">Add Product</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="authService.isLoggedIn()">
+                <a [routerLink]="['/login']">Welcome {{ authService.currentUser.userName }}</a>
+            </li>
+            <li *ngIf="!messageService.isDisplayed">
+                <a (click)="displayMessages()">Show Messages</a>
+            </li>
+            <li *ngIf="messageService.isDisplayed">
+                <a (click)="hideMessages()">Hide Messages</a>
+            </li>
+            <li *ngIf="!authService.isLoggedIn()">
+                <a [routerLink]="['/login']">Log In</a>
+            </li>
+            <li *ngIf="authService.isLoggedIn()">
+                <a (click)="logOut()">Log Out</a>
+            </li>
+        </ul>
     </div>
-</div>
+</nav>

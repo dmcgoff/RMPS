@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RMPS.Business.Logic\RMPS.Business.Logic.csproj" />
     <ProjectReference Include="..\RMPS.DataAccess\RMPS.DataAccess.csproj" />
+    <ProjectReference Include="..\RMPS.Services.Api\RMPS.Services.Api.csproj" />
     <ProjectReference Include="..\RMPS.Service\RMPS.Service.csproj" />
   </ItemGroup>
 
