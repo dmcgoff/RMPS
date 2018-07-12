@@ -1,5 +1,5 @@
-﻿<div class="container">
-    <h3>Products and Orders</h3>
+﻿<div>
+    <h3>Courses</h3>
     <div style="position: relative">
 
         <kendo-grid [data]="products" [height]="500"
@@ -14,25 +14,20 @@
                 <button type="button" kendoGridExcelCommand><span class="k-icon k-i-file-excel"></span>Export to Excel</button>
             </ng-template>
 
-            <kendo-grid-column field="courseId" title="Course Id" width="50px"></kendo-grid-column>
-            <kendo-grid-column field="courseName" title="Name"></kendo-grid-column>
-            <kendo-grid-column field="specialty" title="Specialty"></kendo-grid-column>
-            <kendo-grid-column field="description" title="Description" width="150px"></kendo-grid-column>
-            <kendo-grid-column field="reviewDate" title="Review Date" format="{0:MM/dd/yyyy}" filter="date"></kendo-grid-column>
-            <kendo-grid-column field="releaseDate" title="Release Date" format="{0:MM/dd/yyyy}" filter="date"></kendo-grid-column>
-            <kendo-grid-column field="expirationDate" title="Expiration Date" format="{0:MM/dd/yyyy}" filter="date"></kendo-grid-column>
-            <kendo-grid-column field="credits" title="Credits"></kendo-grid-column>
-            <kendo-grid-column field="cMECert" title="CME Cert"></kendo-grid-column>
-            <kendo-grid-column field="cNECert" title="CNE Cert"></kendo-grid-column>
-            <kendo-grid-column field="riskSpecific" title="Risk Specific"></kendo-grid-column>
-            <kendo-grid-column field="settings" title="Settings"></kendo-grid-column>
-            <kendo-grid-column field="medicalRole" title="Medical Role"></kendo-grid-column>
-            <kendo-grid-column field="state" title="State"></kendo-grid-column>
+            <kendo-grid-column field="TypeName" title="Type" width="150px"></kendo-grid-column>
+            <kendo-grid-column field="DescriptorName" title="Descriptor" width="150px"></kendo-grid-column>
+            <kendo-grid-column field="Name" title="Name"></kendo-grid-column>
+            <kendo-grid-column field="StatusName" title="Status" width="50px"></kendo-grid-column>
+            <kendo-grid-column field="Number" title="Course Id" width="50px"></kendo-grid-column>
+            <kendo-grid-column field="Notes" title="Notes" width="150px"></kendo-grid-column>
 
-            <kendo-grid-excel fileName="CourseCatalog.xlsx"></kendo-grid-excel>
+            <kendo-grid-excel fileName="Courses.xlsx"></kendo-grid-excel>
         </kendo-grid>
         <div *ngIf="isLoading" class="spinner-wrapper">
             <span class="k-icon k-i-loading spinner"></span>
         </div>
     </div>
+    
+    <h3>Grid Fetch Result</h3>
+    {{ products }}
 </div>

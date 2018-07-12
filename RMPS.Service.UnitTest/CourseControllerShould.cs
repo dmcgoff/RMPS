@@ -2,7 +2,7 @@ using Kendo.Mvc.UI;
 using Microsoft.EntityFrameworkCore.Internal;
 using RMPS.Business.Logic;
 using RMPS.DataAccess;
-using RMPS.Service.Controllers;
+using RMPS.Service.Api._2.Controllers;
 using RMPS.Services.Api.Controllers;
 using Xunit;
 

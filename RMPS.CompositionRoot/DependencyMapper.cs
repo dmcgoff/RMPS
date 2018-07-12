@@ -23,8 +23,12 @@ namespace RMPS.CompositionRoot
             //});
             //serviceCollection.AddSingleton<IMapper>(sp => mapperConfiguration.CreateMapper());
 
+            serviceCollection.AddScoped<ICourseService, CourseService>();
             serviceCollection.AddScoped<ICourseCatalogService, CourseCatalogService>();
+
             serviceCollection.AddScoped<ICourseCatalogRepository, CourseCatalogRepository>();
+            serviceCollection.AddScoped<ICourseRepository, CourseRepository>();
+
             serviceCollection.AddScoped<IRmpsDbContext, RmpsDbContext>();
             
         }
